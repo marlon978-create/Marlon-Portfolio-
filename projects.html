@@ -1,0 +1,92 @@
+<!DOCTYPE html> 
+<html>
+<head>
+    <!--<head> holds settings for the page (not visible content)-->
+    <!--<title> is the name shown on the browser tab-->
+    <title>Marlon's Portfolio</title>
+    <link rel="stylesheet" href = "style.css"> 
+    <!--<link... connects CSS file so your styles work-->
+</head>
+
+<body>
+    <section class = "hero">
+        <nav>
+            <div class="logo">
+                <!--<div... is a box that holds your content and can be styled with CSS-->
+                <span class = "logo-m">M</span><span class = "logo-p">P</span><span class = "logo-t">T</span>
+                <span class = "brand-name">Marlon Pineda Tejada</span>
+            </div>
+            <div class = "nav-links">
+                <a href = "index.html">Home</a>
+                <a href = "projects.html">Projects</a>
+            </div>
+            <button class = "menu-toggle">☰</button>
+        </nav>
+        <div class = "projects-page-header">
+            <div class = "projects-page-label">
+                <span class = "yellow-line"></span>
+                <p>Projects</p>
+            </div>
+            <h1>Things I've <span class = "code-highlight">Built</span></h1>
+            <p class = "projects-page-description">
+                A collection of my projects, experiments, and ideas. Each project
+                represents a problem I wanted to solve, a skill I wanted to learn,
+                or something I'm passionate about.
+            </p>
+        </div>
+            <div class = "project-tools">
+                <div class = "project-filters">
+                    <button class = "active" data-filter = "all">All</button>
+                    <button data-filter = "web">Web Development</button>
+                    <button data-filter = "hardware">Hardware / Embedded</button>
+                    <button data-filter = "python">Python / AI</button>
+                </div>
+                <input
+                    type = "text"
+                    class = "project-search"
+                    placeholder= "Search Projects..."
+                >
+            </div>
+    </section>
+    <section class = "projects-page-cards">
+        <div class = "project-grid">
+            <div class = "project" data-category = "web">
+                <img src = "images/church.png" alt = "Nueva Vida En Jesus Website">
+                <h2>Nueva Vida en Jesus Website.</h2>
+                <p>HTML | CSS | JavaScript</p>
+                <p> A responsive bilingual church website built with a clean, modern design and mobile
+                friendly layout.</p>
+                <div class = "project-links">
+                    <a href = "https://beta.nuevavidaenjesus.com/" target = "_blank">View Website</a>
+                    <a href = "https://github.com/marlon978-create/NuevaVidaEnJesus" target = "_blank">View Code</a>
+                </div>
+            </div>
+            <div class = "project" data-category= "hardware">
+                <img src = "images/car.jpeg" alt = "Gesture Controlled RC Car.>"
+                <h2>Gesture Controlled RC Car.</h2>
+                <p>Embedded Systems | Robotics</p>
+                <p>An RC car controlled through hand movements using motion sensors and a microcontroller</p>
+                <video controls class = "project-video">
+                    <source src = "Videos/car-demo.mp4" type = "video/mp4">
+                </video>
+                <div class = "project-links">
+                    <a href = "https://github.com/marlon978-create/Gesture-Controlled-RC-Car./blob/main/README.md" target = "_blank">View readMe</a>
+                    <a href = "https://github.com/marlon978-create/Gesture-Controlled-RC-Car." target = "_blank">View Code</a>
+                </div>
+            </div>
+            <div class = "project" data-category= "python">
+                <img class = "jarvis-img" src = "images/JARVIS.png" alt = Jarvis 1.0 - Local AI Assistant>
+                <h2>Jarvis 1.0 - Local AI Assistant</h2>
+                <p>Python | Artificial Intelligence</p>
+                <p>A locally powered AI assistant built with Python and Ollama.</p>
+                <video controls class = "project-video">
+                    <source src = "Videos/jarvis-demo.mp4" type = "video/mp4">
+                </video>
+                <div class = "project-links">
+                    <a href = "https://github.com/marlon978-create/Jarvis-1.0/blob/main/README.md" target = "_blank">View readMe</a>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src = "projects.js"></script>
+</body>
